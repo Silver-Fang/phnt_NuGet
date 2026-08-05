@@ -9020,9 +9020,9 @@ static_assert(FIELD_OFFSET(KUSER_SHARED_DATA, XStateArm64)                      
 #else
 static_assert(FIELD_OFFSET(KUSER_SHARED_DATA, Reserved10)                           == 0x738, "KUSER_SHARED_DATA.Reserved10 offset is incorrect");
 #endif
-#if !defined(WINDOWS_IGNORE_PACKING_MISMATCH)
 static_assert(FIELD_OFFSET(KUSER_SHARED_DATA, FeatureConfigurationChangeStamp)      == 0xa90, "KUSER_SHARED_DATA.FeatureConfigurationChangeStamp offset is incorrect");
 static_assert(FIELD_OFFSET(KUSER_SHARED_DATA, Spare)                                == 0xa9c, "KUSER_SHARED_DATA.Spare offset is incorrect");
+#if !defined(WINDOWS_IGNORE_PACKING_MISMATCH)
 static_assert(sizeof(KUSER_SHARED_DATA)                                             == 0xaa0, "KUSER_SHARED_DATA size is incorrect (expected 0xaa0)");
 #endif
 #else
